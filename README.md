@@ -11,6 +11,7 @@ hemingway example.py
 
 ```
 Found 1 duplication
+```
 
 Hemingway has two modes of operation:
   `automatic` which is fully automated and uses certain heuristics and conventions to
@@ -69,6 +70,18 @@ default_mode="automatic" # can be interactive
 aggresiveness="high"     # can be medium or low
 ```
 
+## how does it work
+
+```python
+
+Python AST ==Pattern Finder==> 
+Patterns   ==RefactoringEngine==>
+Refactoring Suggestions 
+  ==AutomaticReplacer==> displays info and generates the refactored code
+  ==InteractiveReplacer==> shows suggestions to the programmer with OK/do-that-instead dialogs
+```
+
 ## license
 
 MIT License, Alexander Ivanov, 2015
+
