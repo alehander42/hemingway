@@ -9,10 +9,9 @@ class InteractiveReplacer(Replacer):
     '''
 
     def replace_suggestion(self, suggestion):
-        fix = self.suggestion_dialog(suggestion)
+        accept, patches = self.suggestion_dialog(suggestion)
         suggestion = copy(suggestion)
-        if not fix['accept']:
-            for label, name in fix['patches']:
-                suggestion.args[label] = name
+        if not accept:
+            suggestion.args.update(patches)
 
         self.apply_suggestion(suggestion)

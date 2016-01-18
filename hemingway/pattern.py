@@ -15,5 +15,5 @@ class Pattern:
         self.node = node
         self.args = args
         self.instances = instances
-        self.local = [arg for args if not arg.is_inner]
-        self.inner = [arg for args if arg.is_inner]
+        self.local = [arg for arg in args if not arg.is_inner]
+        self.inner = [arg for arg in args if arg.is_inner]

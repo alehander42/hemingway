@@ -7,6 +7,7 @@ class AutomaticReplacer(Replacer):
     Applies the default suggestion without asking the developer 
     for confirmation
     '''
-
+    show_stdout = False
+    
     def replace_suggestion(self, suggestion):
         self.apply_suggestion(suggestion)

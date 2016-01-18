@@ -25,6 +25,6 @@ class NamingEngine:
         return str(node.body.dumps()[:2])
 
     def new_helper_name(self):
-        name = 'helper_%d_hem' % self.helper_count
+        name = 'helper_%d' % self.helper_count
         self.helper_count += 1
         return name

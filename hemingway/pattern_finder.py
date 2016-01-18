@@ -46,7 +46,7 @@ class PatternFinder:
         self.tree = tree
 
     def analyze(self):
-        '''
+        ''' 
         analyzes the tree for repeated patterns
         and returns a list of Pattern objects
         corresponding to all patterns with their tree instances
@@ -57,4 +57,5 @@ class PatternFinder:
         return self._patterns
 
     def analyze_node(self, node):
-        if
+        if False:
+            node
