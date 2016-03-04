@@ -2,6 +2,8 @@
 
 *write drunk, edit sober* - Ernest Hemingway
 
+## unfinished: work in progress 
+
 
 a tool for automated/semi-automated refactoring and dry-ing of your code:
 
@@ -57,17 +59,17 @@ x = filter_even_map(z, lambda a: a + 4)
 
 Example of `interactive` mode
 ```bash
-hemingway example.py -i #-i / --interactive can be setup as default in .hemingway.toml
+hemingway example.py -i #-i / --interactive can be setup as default in .hemingway.yaml
 ```
 
 ## configuration
 
-you can setup a .hemingway.toml file in the directory where you run it from
+you can setup a .hemingway.yaml file in the directory where you run it from
 or in your home folder
 
-```toml
-default_mode="automatic" # can be interactive
-aggresiveness="high"     # can be medium or low
+```yaml
+default_mode: automatic # can be interactive
+aggresiveness: high     # can be medium or low
 ```
 
 ## how does it work
@@ -83,5 +85,6 @@ Refactoring Suggestions
 
 ## license
 
-MIT License, Alexander Ivanov, 2015
+MIT License, Alexander Ivanov, 2016
 
+ 

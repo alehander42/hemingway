@@ -9,7 +9,7 @@ class NamingEngine:
         self.helper_count = 0
 
     def function_name(self, pattern):
-        if pattern.is_expression and pattern.node.type == 'listcomp':
+        if pattern.is_expression and pattern.node.type == 'list_comprehension':
             return 'map_%s' % self.extract_body_description(pattern)
         else:
             return self.new_helper_name()
